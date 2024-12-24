@@ -1,0 +1,15 @@
+尚硅谷stm32
+Objects
+Listings
+*尚硅谷*
+hal*
+STM32F4xx_DSP_StdPeriph*
+!STM32F4xx_DSP_StdPeriph*.zip
+GD32F4xx_Firmware_Library*
+!GD32F4xx_Firmware_Library*.7z
+01_LED_Register
+*.uvguix.*
+*转接板*
+
+
+.vscode
