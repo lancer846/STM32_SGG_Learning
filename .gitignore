@@ -2,7 +2,15 @@
 Objects
 Listings
 *尚硅谷*
-hal*
+/MDK-ARM/hal*
+*.sct
+*.map
+*.d
+*.crf
+*.o
+*.htm
+*.hex
+*.Inp
 STM32F4xx_DSP_StdPeriph*
 !STM32F4xx_DSP_StdPeriph*.zip
 GD32F4xx_Firmware_Library*

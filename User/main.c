@@ -2,25 +2,57 @@
 
 #include "delay.h"
 #include "led.h"
+#include "key.h"
 /**
- * @brief 实现跑马灯效果
- * PC6 为 PNP 三极管
- * 点亮 PD8、PD9、PD10
+ * @brief 使用外部中断实现 LED 的切换效果
  */
+
+// 全局变量，表示当前流水灯状态
+FLOW_LED flow_led = INIT;
 int main(void)
 {
-
 	LED_init();
+	KEY_init();
 
-	uint32_t LED_list[8] = {LED1, LED2, LED3, LED4, LED5, LED6, LED7, LED8};
 	while (1)
 	{
-		for (uint8_t i = 0; i < 8; i++)
+		switch (flow_led)
 		{
-			LED_on(LED_list[i]);
-			Delay_ms(500);
-			LED_off(LED_list[i]);
+		case L1:
+			LED_off(LED8);
+			LED_on(LED1);
+			break;
+		case L2:
+			LED_off(LED1);
+			LED_on(LED2);
+			break;
+		case L3:
+			LED_off(LED2);
+			LED_on(LED3);
+			break;
+		case L4:
+			LED_off(LED3);
+			LED_on(LED4);
+			break;
+		case L5:
+			LED_off(LED4);
+			LED_on(LED5);
+			break;
+		case L6:
+			LED_off(LED5);
+			LED_on(LED6);
+			break;
+		case L7:
+			LED_off(LED6);
+			LED_on(LED7);
+			break;
+		case L8:
+			LED_off(LED7);
+			LED_on(LED8);
+			break;
+
+		default:
+			break;
 		}
-		
 	}
 }

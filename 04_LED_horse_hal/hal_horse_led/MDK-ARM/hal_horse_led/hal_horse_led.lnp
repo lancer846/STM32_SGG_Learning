@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"hal_horse_led\startup_stm32f407xx.o"
+"hal_horse_led\main.o"
+"hal_horse_led\gpio.o"
+"hal_horse_led\stm32f4xx_it.o"
+"hal_horse_led\stm32f4xx_hal_msp.o"
+"hal_horse_led\led.o"
+"hal_horse_led\stm32f4xx_hal_tim.o"
+"hal_horse_led\stm32f4xx_hal_tim_ex.o"
+"hal_horse_led\stm32f4xx_hal_rcc.o"
+"hal_horse_led\stm32f4xx_hal_rcc_ex.o"
+"hal_horse_led\stm32f4xx_hal_flash.o"
+"hal_horse_led\stm32f4xx_hal_flash_ex.o"
+"hal_horse_led\stm32f4xx_hal_flash_ramfunc.o"
+"hal_horse_led\stm32f4xx_hal_gpio.o"
+"hal_horse_led\stm32f4xx_hal_dma_ex.o"
+"hal_horse_led\stm32f4xx_hal_dma.o"
+"hal_horse_led\stm32f4xx_hal_pwr.o"
+"hal_horse_led\stm32f4xx_hal_pwr_ex.o"
+"hal_horse_led\stm32f4xx_hal_cortex.o"
+"hal_horse_led\stm32f4xx_hal.o"
+"hal_horse_led\stm32f4xx_hal_exti.o"
+"hal_horse_led\system_stm32f4xx.o"
+--strict --scatter "hal_horse_led\hal_horse_led.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hal_horse_led.map" -o hal_horse_led\hal_horse_led.axf
