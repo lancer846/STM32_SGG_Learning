@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp.sp
+"10_usart_polling_hal\startup_stm32f407xx.o"
+"10_usart_polling_hal\main.o"
+"10_usart_polling_hal\gpio.o"
+"10_usart_polling_hal\usart.o"
+"10_usart_polling_hal\stm32f4xx_it.o"
+"10_usart_polling_hal\stm32f4xx_hal_msp.o"
+"10_usart_polling_hal\stm32f4xx_hal_tim.o"
+"10_usart_polling_hal\stm32f4xx_hal_tim_ex.o"
+"10_usart_polling_hal\stm32f4xx_hal_uart.o"
+"10_usart_polling_hal\stm32f4xx_hal_rcc.o"
+"10_usart_polling_hal\stm32f4xx_hal_rcc_ex.o"
+"10_usart_polling_hal\stm32f4xx_hal_flash.o"
+"10_usart_polling_hal\stm32f4xx_hal_flash_ex.o"
+"10_usart_polling_hal\stm32f4xx_hal_flash_ramfunc.o"
+"10_usart_polling_hal\stm32f4xx_hal_gpio.o"
+"10_usart_polling_hal\stm32f4xx_hal_dma_ex.o"
+"10_usart_polling_hal\stm32f4xx_hal_dma.o"
+"10_usart_polling_hal\stm32f4xx_hal_pwr.o"
+"10_usart_polling_hal\stm32f4xx_hal_pwr_ex.o"
+"10_usart_polling_hal\stm32f4xx_hal_cortex.o"
+"10_usart_polling_hal\stm32f4xx_hal.o"
+"10_usart_polling_hal\stm32f4xx_hal_exti.o"
+"10_usart_polling_hal\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "10_USART_polling_hal\10_USART_polling_hal.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "10_USART_polling_hal.map" -o 10_USART_polling_hal\10_USART_polling_hal.axf
