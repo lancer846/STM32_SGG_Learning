@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"18_led_systick_interrupt_hal\startup_stm32f407xx.o"
+"18_led_systick_interrupt_hal\main.o"
+"18_led_systick_interrupt_hal\gpio.o"
+"18_led_systick_interrupt_hal\stm32f4xx_it.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_msp.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_tim.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_tim_ex.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_rcc.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_rcc_ex.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_flash.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_flash_ex.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_flash_ramfunc.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_gpio.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_dma_ex.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_dma.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_pwr.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_pwr_ex.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_cortex.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal.o"
+"18_led_systick_interrupt_hal\stm32f4xx_hal_exti.o"
+"18_led_systick_interrupt_hal\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "18_LED_systick_interrupt_hal\18_LED_systick_interrupt_hal.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "18_LED_systick_interrupt_hal.map" -o 18_LED_systick_interrupt_hal\18_LED_systick_interrupt_hal.axf
