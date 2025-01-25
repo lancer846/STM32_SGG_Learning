@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"20_led_timer6_interrupt_hal\startup_stm32f407xx.o"
+"20_led_timer6_interrupt_hal\main.o"
+"20_led_timer6_interrupt_hal\gpio.o"
+"20_led_timer6_interrupt_hal\tim.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_it.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_msp.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_tim.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_tim_ex.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_rcc.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_rcc_ex.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_flash.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_flash_ex.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_flash_ramfunc.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_gpio.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_dma_ex.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_dma.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_pwr.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_pwr_ex.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_cortex.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal.o"
+"20_led_timer6_interrupt_hal\stm32f4xx_hal_exti.o"
+"20_led_timer6_interrupt_hal\system_stm32f4xx.o"
+--strict --scatter "20_LED_timer6_interrupt_hal\20_LED_timer6_interrupt_hal.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "20_LED_timer6_interrupt_hal.map" -o 20_LED_timer6_interrupt_hal\20_LED_timer6_interrupt_hal.axf
